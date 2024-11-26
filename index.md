@@ -3,7 +3,7 @@ layout: default  # This tells Jekyll to use the 'default' layout you created
 title: Where to buy
 ---
 
-# Welcome to ManBearPig.io!
+# Welcome to ManBearPig's wood!
 
 This is a place where manbearpigs do their thing – mysterious, legendary, and a little bit wild. I'm your friendly neighborhood ManBearPig, keeping things chaotic yet strangely organized.
 
