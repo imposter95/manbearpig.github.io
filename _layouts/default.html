@@ -7,33 +7,134 @@
   <meta name="description" content="{{ site.description }}">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">  <!-- Custom CSS -->
+  <style>
+    /* Global styles for dark mode and centering */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #121212;  /* Dark background */
+      color: #f1f1f1;  /* Light text */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      align-items: center; /* Centers content horizontally */
+      justify-content: center; /* Centers content vertically */
+    }
+
+    /* Centering the container div */
+    .container {
+      width: 90%; /* Responsive width */
+      max-width: 1200px; /* Maximum width */
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* Header Section */
+    header {
+      width: 100%;
+      padding: 20px;
+      background-color: #1e1e1e;  /* Dark background for header */
+      border-bottom: 1px solid #333; /* Subtle border */
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #f1f1f1;  /* Light text for title */
+    }
+
+    header nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+    }
+
+    header nav ul li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+
+    header nav ul li a {
+      color: #f1f1f1;  /* Light text for links */
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    header nav ul li a:hover {
+      color: #f1c40f;  /* Highlight on hover (yellow) */
+    }
+
+    /* Main Content Area */
+    main {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 40px 20px;
+    }
+
+    .content {
+      max-width: 900px;
+      text-align: left;
+    }
+
+    /* Footer Section */
+    footer {
+      width: 100%;
+      padding: 20px;
+      background-color: #1e1e1e;  /* Dark background for footer */
+      text-align: center;
+      border-top: 1px solid #333;
+    }
+
+    footer p {
+      color: #f1f1f1;
+      margin: 0;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header nav ul li {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
 </head>
 <body>
-  <!-- Header Section: Change navigation items as needed -->
+  <!-- Header Section -->
   <header>
     <div class="container">
       <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1> <!-- Site title link -->
       <nav>
         <ul>
-          <li><a href="{{ site.twitter }}/">Twitter</a></li> <!-- Link to home page -->
-          <li><a href="{{ site.telegram }}">Telegram</a></li> <!-- Link to about page -->
+          <li><a href="{{ site.twitter }}/">Twitter</a></li> <!-- Link to Twitter -->
+          <li><a href="{{ site.telegram }}">Telegram</a></li> <!-- Link to Telegram -->
           <li><a href="{{ site.baseurl }}/contact">Buy on PumpFun</a></li> <!-- Link to contact page -->
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Main Content Area: This will display content from pages using this layout -->
+  <!-- Main Content Area -->
   <main>
     <div class="content">
-      {{ content }} <!-- This is where the content of each page will be displayed -->
+      {{ content }} <!-- Page content is displayed here -->
     </div>
   </main>
 
-  <!-- Footer Section: Customize as per your requirement -->
+  <!-- Footer Section -->
   <footer>
     <div class="container">
-      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p> <!-- Site footer -->
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p> <!-- Footer content -->
     </div>
   </footer>
 </body>
