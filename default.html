@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">  <!-- Custom CSS -->
+</head>
+<body>
+  <!-- Header Section: Change navigation items as needed -->
+  <header>
+    <div class="container">
+      <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1> <!-- Site title link -->
+      <nav>
+        <ul>
+          <li><a href="{{ site.baseurl }}/">Home</a></li> <!-- Link to home page -->
+          <li><a href="{{ site.baseurl }}/about">About</a></li> <!-- Link to about page -->
+          <li><a href="{{ site.baseurl }}/contact">Contact</a></li> <!-- Link to contact page -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content Area: This will display content from pages using this layout -->
+  <main>
+    <div class="content">
+      {{ content }} <!-- This is where the content of each page will be displayed -->
+    </div>
+  </main>
+
+  <!-- Footer Section: Customize as per your requirement -->
+  <footer>
+    <div class="container">
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p> <!-- Site footer -->
+    </div>
+  </footer>
+</body>
+</html>
