@@ -1,7 +1,9 @@
 title: ManBearPig  # Change this to your desired site title
 description: "A cool and chill personal website"  # Modify the description
 baseurl: ""  # Leave empty if you are using GitHub Pages on the root domain
-url: "https://manbearpig.github.io"  # Replace 'your-username' with your GitHub username
+url: "https://manbearpig.github.io" # Replace 'your-username' with your GitHub username
+telegram: "https://t.me/+DX-DATmWNFxjN2Jk"
+twitter: "https://x.com/manpig38099"
 
 theme: minima  # Minima is the default Jekyll theme. You can change this to a custom theme if needed.
 author: ImposterXacier  # Replace with your name
