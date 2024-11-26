@@ -1,7 +1,7 @@
 /* Global styles for dark mode and centering */
 body {
   font-family: 'Poppins', sans-serif;
-  background-image: url('/assets/images/biggermanbear.png');  /* Path to your background image */
+  background-image: url('{{ site.baseurl }}/assets/images/biggermanbear.png');  /* Adjusted for Jekyll's baseurl */
   background-size: cover;  /* Makes sure the image covers the whole page */
   background-position: center center;  /* Center the image */
   background-attachment: fixed;  /* Keeps the background fixed while scrolling */
