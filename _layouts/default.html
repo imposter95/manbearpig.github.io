@@ -3,37 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | {{ site.title }}</title>
+  <title>{{ 1  page.title }} | {{ site.title }}</title>
   <meta name="description" content="{{ site.description }}">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">  <!-- Custom CSS -->
-</head>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}"> </head>
 <body>
-  <!-- Header Section -->
-  <header>
+  <header class="header">
     <div class="container">
-      <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1> <!-- Site title link -->
-      <nav>
+      <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1> <nav>
         <ul>
-          <li><a href="{{ site.twitter }}/">Twitter</a></li> <!-- Link to Twitter -->
-          <li><a href="{{ site.telegram }}">Telegram</a></li> <!-- Link to Telegram -->
-          <li><a href="{{ site.baseurl }}/contact">Buy on PumpFun</a></li> <!-- Link to contact page -->
-        </ul>
+          <li><a href="{{ site.twitter }}/">Twitter</a></li> <li><a href="{{ site.telegram }}">Telegram</a></li> <li><a href="{{ site.baseurl }}/contact">Buy on PumpFun</a></li> </ul>
       </nav>
     </div>
   </header>
-  <!-- Main Content Area -->
-  <main>
+
+  <main class="main">
     <div class="content">
-      {{ content }} <!-- Page content is displayed here -->
-    </div>
+      {{ content }} </div>
   </main>
 
-  <!-- Footer Section -->
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p> <!-- Footer content -->
-    </div>
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p> </div>
   </footer>
 </body>
 </html>
