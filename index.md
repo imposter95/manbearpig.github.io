@@ -1,6 +1,6 @@
 ---
 layout: default  # This tells Jekyll to use the 'default' layout you created
-title: Home
+title: Where to buy
 ---
 
 # Welcome to ManBearPig.io!
