@@ -45,15 +45,17 @@
       color: #f1f1f1;  /* Light text for title */
     }
 
+    /* Navigation Styles */
     header nav ul {
-      list-style: none;
+      list-style: none;  /* Remove bullet points */
       padding: 0;
-      margin: 10px 0 0;
+      margin: 0;
+      display: flex; /* Makes the links appear in a row */
+      justify-content: center; /* Centers the links horizontally */
     }
 
     header nav ul li {
-      display: inline-block;
-      margin: 0 10px;
+      margin: 0 15px; /* Add space between the links */
     }
 
     header nav ul li a {
@@ -61,6 +63,8 @@
       text-decoration: none;
       font-size: 1rem;
       font-weight: 400;
+      display: block; /* Make the entire area clickable */
+      padding: 10px 0; /* Vertical padding for the links */
     }
 
     header nav ul li a:hover {
@@ -116,9 +120,9 @@
       <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1> <!-- Site title link -->
       <nav>
         <ul>
-          <h2><a href="{{ site.twitter }}/">Twitter</a></h2> <!-- Link to Twitter -->
-          <h2><a href="{{ site.telegram }}">Telegram</a></h2> <!-- Link to Telegram -->
-          <h2><a href="{{ site.baseurl }}/contact">Buy on PumpFun</a></h2> <!-- Link to contact page -->
+          <li><a href="{{ site.twitter }}/">Twitter</a></li> <!-- Link to Twitter -->
+          <li><a href="{{ site.telegram }}">Telegram</a></li> <!-- Link to Telegram -->
+          <li><a href="{{ site.baseurl }}/contact">Buy on PumpFun</a></li> <!-- Link to contact page -->
         </ul>
       </nav>
     </div>
