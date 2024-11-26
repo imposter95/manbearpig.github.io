@@ -1,0 +1,58 @@
+body {
+  font-family: 'Poppins', sans-serif; /* Custom font */
+  background-color: #f7f7f7;  /* Light gray background */
+  color: #333;  /* Text color */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;  /* Dark background for header */
+  color: white;  /* White text in header */
+  padding: 20px 0;
+}
+
+header h1 {
+  text-align: center;
+  margin: 0;
+}
+
+header nav {
+  text-align: center;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #333;  /* Dark footer */
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+.content {
+  padding: 40px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
