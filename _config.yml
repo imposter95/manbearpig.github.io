@@ -5,5 +5,5 @@ url: "https://manbearpig.github.io" # Replace 'your-username' with your GitHub u
 telegram: "https://t.me/+DX-DATmWNFxjN2Jk"
 twitter: "https://x.com/manpig38099"
 
-theme: jekyll-theme-chirpy  # Minima is the default Jekyll theme. You can change this to a custom theme if needed.
+theme: minima  # Minima is the default Jekyll theme. You can change this to a custom theme if needed.
 author: ImposterXacier  # Replace with your name
