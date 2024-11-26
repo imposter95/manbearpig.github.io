@@ -83,6 +83,13 @@
       text-align: left;
     }
 
+    /* Image styling */
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
     /* Footer Section */
     footer {
       width: 100%;
@@ -116,11 +123,12 @@
 <body>
   <header>
     <div class="container">
-      <h1>{{ site.title }}</h1> <nav>
+      <h1>{{ site.title }}</h1>
+      <nav>
         <ul>
           <li><a href="{{ site.twitter }}/">Twitter</a></li>
           <li><a href="{{ site.telegram }}">Telegram</a></li>
-          <li><a href="{{ site.PLACE_TO_BUY }}">Buy on PumpFun</a></li>
+          <li><a href="{{ site.baseurl }}/contact">Buy on PumpFun</a></li>
         </ul>
       </nav>
     </div>
@@ -128,6 +136,7 @@
 
   <main>
     <div class="content">
+      <img src="path/to/your/image.jpg" alt="Description of the image">
       {{ content }}
     </div>
   </main>
