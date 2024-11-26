@@ -4,6 +4,7 @@ baseurl: ""  # Leave empty if you are using GitHub Pages on the root domain
 url: "https://manbearpig.github.io" # Replace 'your-username' with your GitHub username
 telegram: "https://t.me/+DX-DATmWNFxjN2Jk"
 twitter: "https://x.com/manpig38099"
+PLACE_TO_BUY: "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://pump.fun/board&ved=2ahUKEwjb6LionPqJAxW2V0EAHeveK20QFnoECAwQAQ&usg=AOvVaw3RSVHXqkz3l2mBU153VJKE"
 
 theme: minima  # Minima is the default Jekyll theme. You can change this to a custom theme if needed.
 author: ImposterXacier  # Replace with your name
