@@ -3,28 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ 1  page.title }} | {{ site.title }}</title>
-  <meta name="description" content="{{ site.description }}">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}"> </head>
+  <title>Centered Page</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      font-family: 'Poppins', sans-serif;
+      background-image: url('{{ site.baseurl }}/assets/images/biggermanbear.png');
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      text-align: center;
+    }
+
+    /* Header Section */
+    header {
+      width: 100%;
+      padding: 20px;
+      background-color: rgba(30, 30, 30, 0.7);
+      border-bottom: 1px solid #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #f1f1f1;
+    }
+
+    header nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+    }
+
+    header nav ul li {
+      margin: 0 10px;
+    }
+
+    header nav ul li a {
+      color: #f1f1f1;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    header nav ul li a:hover {
+      color: #f1c40f;
+    }
+
+    /* Main Content Area */
+    main {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      padding: 40px 20px;
+    }
+
+    .content {
+      max-width: 900px;
+      text-align: left;
+    }
+
+    /* Footer Section */
+    footer {
+      width: 100%;
+      padding: 20px;
+      background-color: rgba(30, 30, 30, 0.7);
+      text-align: center;
+      border-top: 1px solid #333;
+    }
+
+    footer p {
+      color: #f1f1f1;
+      margin: 0;
+    }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      header nav ul {
+        flex-direction: column;
+      }
+
+      header nav ul li {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
 <body>
-  <header class="header">
+  <header>
     <div class="container">
-      <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1> <nav>
+      <h1><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+      <nav>
         <ul>
-          <li><a href="{{ site.twitter }}/">Twitter</a></li> <li><a href="{{ site.telegram }}">Telegram</a></li> <li><a href="{{ site.baseurl }}/contact">Buy on PumpFun</a></li> </ul>
+          <li><a href="{{ site.twitter }}/">Twitter</a></li>
+          <li><a href="{{ site.telegram }}">Telegram</a></li>
+          <li><a href="{{ site.baseurl }}/contact">Buy on PumpFun</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main class="main">
+  <main>
     <div class="content">
-      {{ content }} </div>
+      {{ content }}
+    </div>
   </main>
 
-  <footer class="footer">
+  <footer>
     <div class="container">
-      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p> </div>
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}</p>
+    </div>
   </footer>
 </body>
 </html>
