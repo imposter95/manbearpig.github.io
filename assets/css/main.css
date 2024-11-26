@@ -1,29 +1,41 @@
+/* Global Styles */
 body {
   font-family: 'Poppins', sans-serif; /* Custom font */
-  background-color: #f7f7f7;  /* Light gray background */
-  color: #333;  /* Text color */
+  background-color: #121212;  /* Dark background */
+  color: #f1f1f1;  /* Light text for contrast */
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;  /* Centers the content horizontally */
+  justify-content: flex-start; /* Align items to the top (to make footer at the bottom) */
 }
 
+/* Header Section */
 header {
-  background-color: #333;  /* Dark background for header */
-  color: white;  /* White text in header */
+  background-color: #1e1e1e;  /* Darker background for header */
+  color: #f1f1f1;  /* Light text in header */
   padding: 20px 0;
+  width: 100%;  /* Ensure header spans full width */
+  border-bottom: 1px solid #333;  /* Subtle border under the header */
 }
 
 header h1 {
   text-align: center;
   margin: 0;
+  font-size: 2.5rem;  /* Larger title */
 }
 
 header nav {
   text-align: center;
+  margin-top: 15px;
 }
 
 header nav ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 header nav ul li {
@@ -32,27 +44,56 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: white;
+  color: #f1f1f1;  /* Light text for navigation */
   text-decoration: none;
   font-weight: 600;
+  font-size: 1rem;
 }
 
+header nav ul li a:hover {
+  color: #f1c40f;  /* Highlight color (yellow) on hover */
+}
+
+/* Content Section */
+.content {
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 900px; /* Limit max content width */
+  margin: 0 auto; /* Center content */
+  text-align: left;
+}
+
+.container {
+  width: 80%; /* Responsive width for larger screens */
+  margin: 0 auto;
+}
+
+/* Footer Section */
 footer {
-  background-color: #333;  /* Dark footer */
-  color: white;
+  background-color: #1e1e1e;  /* Dark footer */
+  color: #f1f1f1;
   padding: 10px;
+  width: 100%;
   text-align: center;
+  border-top: 1px solid #333;  /* Subtle border at the top of the footer */
 }
 
 footer p {
   margin: 0;
 }
 
-.content {
-  padding: 40px;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;  /* Smaller header text on mobile */
+  }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
+  header nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .content {
+    padding: 20px 10px;  /* Adjust padding for smaller screens */
+  }
 }
